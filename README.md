@@ -3,9 +3,10 @@
 Important:
 <br>You can use this for your own Projects with Peterodactyl BUT don´t claim these as yours!
 
-
+https://img.shields.io/github/downloads/{username}/{repo-name}/total.svg
 -------------------------------------------------
 ### Currently added eggs
+
 Discord Bot
 -------------------------------------------------
 - NodeJS (Universal)
