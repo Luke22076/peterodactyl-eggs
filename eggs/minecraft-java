@@ -10,8 +10,10 @@
     "description": "Minecraft Server Egg with custom startup and environment variables.",
     "features": null,
     "images": [
-        "quay.io\/yajtpg\/pterodactyl-images:java-8",
-        "quay.io\/yajtpg\/pterodactyl-images:java-11"
+        "ghcr.io\/pterodactyl\/yolks:java_17",
+        "ghcr.io\/pterodactyl\/yolks:java_16",
+        "ghcr.io\/pterodactyl\/yolks:java_11",
+        "ghcr.io\/pterodactyl\/yolks:java_8"
     ],
     "startup": "/start.sh",
     "config": {
