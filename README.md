@@ -1,4 +1,4 @@
-# Peterodactyl-EGGs | Version 1.3.8
+# Peterodactyl-EGGs | Version 1.4.2
 -------------------------------------------------
 Important:
 <br>You can use this for your own Projects with Peterodactyl BUT don´t claim these as yours!
@@ -12,7 +12,7 @@ Discord Bot
 
 Minecraft
 -------------------------------------------------
-- Java (Java Version 8, 11)
+- Java (Java Version 8, 11, 16, 18)
 - Waterfall (Java Version 8, 11, 16, 17)
 
 <br>
