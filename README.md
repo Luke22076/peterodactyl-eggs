@@ -1,8 +1,9 @@
 # Peterodactyl-EGGs | Version 1.3.8
 This eggs are made by Luvus ツ#0001 for Peterodactyl
 -------------------------------------------------
-<br> You can use this for your own Projects with Peterodactyl BUT don´t claim these as yours!</br>
-
+Important
+<br>You can use this for your own Projects with Peterodactyl BUT don´t claim these as yours!
+<br>
 ### Currently added eggs
 Discord Bot
 -------------------------------------------------
