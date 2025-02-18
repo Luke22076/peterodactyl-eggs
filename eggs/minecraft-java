@@ -1,0 +1,77 @@
+{
+    "_comment": "DO NOT EDIT: FILE GENERATED AUTOMATICALLY BY PTERODACTYL PANEL - PTERODACTYL.IO",
+    "meta": {
+        "version": "PTDL_v1",
+        "update_url": null
+    },
+    "exported_at": "2025-02-18T22:00:00-05:00",
+    "name": "Minecraft Server",
+    "author": "dein-email@example.com",
+    "description": "Minecraft Server Egg with custom startup and environment variables.",
+    "features": null,
+    "images": [
+        "quay.io\/yajtpg\/pterodactyl-images:java-8",
+        "quay.io\/yajtpg\/pterodactyl-images:java-11"
+    ],
+    "startup": "/start.sh",
+    "config": {
+        "files": "{}",
+        "startup": "{\r\n    \"done\": \"Done.*\",\r\n    \"userInteraction\": []\r\n}",
+        "logs": "{\r\n    \"custom\": true,\r\n    \"location\": \"logs/latest.log\"\r\n}",
+        "stop": "^C"
+    },
+    "scripts": {
+        "installation": {
+            "script": null,
+            "container": "openjdk:8-jre-alpine",
+            "entrypoint": "sh"
+        }
+    },
+    "variables": [
+        {
+            "name": "Minecraft Server Version",
+            "description": "Minecraft Version to run.",
+            "env_variable": "MC_VERSION",
+            "default_value": "1.19.3",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "required|string|max:64"
+        },
+        {
+            "name": "Minecraft RAM Allocation",
+            "description": "Amount of RAM allocated to the Minecraft server.",
+            "env_variable": "MC_RAM",
+            "default_value": "2048",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "required|integer|min:1024|max:8192"
+        },
+        {
+            "name": "Minecraft Startup Command",
+            "description": "Command to start the Minecraft server.",
+            "env_variable": "MC_STARTUP_CMD",
+            "default_value": "java -Xms${MC_RAM}M -Xmx${MC_RAM}M -jar server.jar nogui",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "required|string|max:256"
+        },
+        {
+            "name": "Server EULA Agreement",
+            "description": "Accept the Minecraft EULA (true/false).",
+            "env_variable": "MC_EULA",
+            "default_value": "true",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "required|boolean"
+        },
+        {
+            "name": "Minecraft Server Port",
+            "description": "Port on which the Minecraft server will listen.",
+            "env_variable": "MC_PORT",
+            "default_value": "25565",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "required|integer|min:1024|max:65535"
+        }
+    ]
+}
